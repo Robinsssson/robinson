@@ -1,0 +1,6 @@
+# ninja log v5
+6	451	7189035866933313	CMakeFiles/matrix.dir/test.cpp.obj	88cf20f86e58da4c
+2	542	7189035867853325	CMakeFiles/matrix.dir/matrix.cpp.obj	4b70b0505515dfa
+9	731	7188911956174781	CMakeFiles/matrix.dir/library.cpp.obj	8dc01627930d8aae
+542	671	7189035869073324	matrix.exe	a4a3457df5538aec
+14	398	7189148337799263	build.ninja	52e6c5847dd6af54
