@@ -6,13 +6,6 @@
 
 using namespace robinson::matrix;
 
-void print_vec(std::vector<double> v) {
-    for (const auto &i: v) {
-        std::cout << i << ' ';
-    }
-    std::cout << std::endl;
-}
-
 int main() {
     Matrix m1(2, 3, {1, 2, 3, 4, 5, 6});
     Matrix m2(3, 2, {1, 1, 1, 1, 1, 1});

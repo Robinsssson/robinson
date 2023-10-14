@@ -7,6 +7,13 @@
 
 namespace robinson {
     namespace matrix {
+        void print_vec(std::vector<double> v) {
+            for (const auto &i: v) {
+                std::cout << i << ' ';
+            }
+            std::cout << std::endl;
+        }
+
         class Matrix {
         public:
             Matrix(int row, int col, const double *);

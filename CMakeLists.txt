@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.26)
-project(matrix)
+project(robinson)
 
 set(CMAKE_CXX_STANDARD 14)
-
-add_executable(matrix test.cpp matrix.cpp matrix.h)
+add_subdirectory(matrix)
+add_executable(robinson main.cpp)
+target_link_libraries(robinson lib_matrix)
 
