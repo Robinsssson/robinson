@@ -5,22 +5,16 @@
 #include <memory>
 #include <iostream>
 
+
 namespace robinson {
     namespace matrix {
-        void print_vec(std::vector<double> v) {
-            for (const auto &i: v) {
-                std::cout << i << ' ';
-            }
-            std::cout << std::endl;
-        }
-
         class Matrix {
         public:
             Matrix(int row, int col, const double *);
 
             Matrix(int row, int col, std::initializer_list<double> list);
 
-            Matrix(int row = 0, int col = 0);
+            explicit Matrix(int row = 0, int col = 0);
 
             Matrix(Matrix const &matrix);
 
@@ -53,7 +47,7 @@ namespace robinson {
 
             std::vector<double> get_row(int row) const;
 
-            const std::vector<double> get_arr() const { return *m_mat; }
+            std::vector<double> get_arr() const { return *m_mat; }
 
         private:
             int m_col, m_row;
